@@ -1,27 +1,21 @@
+
 import logo from './logo.svg';
 import './App.css';
 import NavBar from "./components/NavBar/NavBar.js";
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ImagenInicio from './components/ImagenInicio/ImagenInicio';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
+      <ItemListContainer greeting={"Bienvenida/o al lugar que estiliza tu casa"}/>    
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <ImagenInicio/>
       </header>
     </div>
   );
 }
 
 export default App;
+

@@ -1,6 +1,7 @@
 
-import logo from "../../logoMarca.jpeg";
+import logo from "../../imagenes/logoMarca.jpeg";
 import "./stylesNavBar.css";
+import CartWidget from "../CartWidget/CartWidget";
 
 const NavBar = () => {
     return (
@@ -24,9 +25,14 @@ const NavBar = () => {
                 </ul>
             </div>
 
+            <div>
+                <CartWidget/>
+            </div>
+
             <div className="containerbuttonlogin">
                 <button className="buttonLogin">Login</button>
             </div>
+
         </div>
     );
 };
