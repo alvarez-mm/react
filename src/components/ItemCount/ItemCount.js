@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./stylesItemCount.css"
 
-const ItemCount = (stock, initial , onAdd) => {
-        const [contador, setContador] = useState (0);
+const ItemCount = ({stock, initial , onAdd}) => {
+        const [contador, setContador] = useState (initial);
             const suma = () => {
                 setContador ( contador + 1 )
             };

@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <ItemListContainer greeting={"Bienvenida/o al lugar que estiliza tu casa"}/>
-      <ItemCount/>   
+      <ItemCount stock="5" initial= "1" />   
       <header className="App-header">
       <ImagenInicio/>
       </header>
