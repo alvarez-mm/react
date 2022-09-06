@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <ItemListContainer greeting={"Bienvenida/o al lugar que estiliza tu casa"}/>
       <ItemCount stock={5} initial= {1} onAdd />   
       <header className="App-header">
       <ImagenInicio/>
+      <ItemListContainer greeting={"Bienvenida/o al lugar que estiliza tu casa"}/>
       </header>
     </div>
   );
