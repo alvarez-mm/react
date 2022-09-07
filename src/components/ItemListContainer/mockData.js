@@ -1,27 +1,30 @@
+import imagenEspejoCircular from "../../imagenes/espejocircular.jpeg";
+import imagenRelojMacetero from "../../imagenes/relojmacetero.jpeg";
+import imagenPortaAccesorios from "../../imagenes/portaccesorios.jpeg";
 
 const data = [
     {
         id: 1,
-        nombre: "espejo",
-        descripcion: "Espejo circular",
+        nombre: "Espejo Circular",
+        descripcion: "Espejo circular de 60 cm de diámetro con madera",
         precio: "$8000",
-        imagen: "../../imagenes/espejocircular.jpeg",
+        imagen: imagenEspejoCircular,
         stock: 5
     },
     {
         id: 2,
-        nombre: "reloj",
-        descripcion: "Reloj macetero",
+        nombre: "Reloj Macetero",
+        descripcion: "Reloj de madera con maceta",
         precio: "$12000",
-        imagen: "../../imagenes/relojmacetero.jpeg",
+        imagen: imagenRelojMacetero,
         stock: 6
     },
     {
         id: 3,
-        nombre: "portaccesorios",
-        descripcion: "Porta Accesorios",
+        nombre: "Porta Accesorios",
+        descripcion: "Porta accesorios de madera",
         precio: "$3000",
-        imagen: "../../imagenes/portaccesorios.jpeg",
+        imagen: imagenPortaAccesorios,
         stock: 10
     }
 ];
