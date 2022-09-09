@@ -21,13 +21,15 @@ const ItemListContainer = ({greeting}) => {
 
     return (
         <>
-            {
-                items.length > 0 ? (
-           <ItemList listaProductos={items}/> 
-                ) : (
-                    <div>Cargando...</div>
-                )
-            }
+            <div className="itemListContainer">          
+                {
+                    items.length > 0 ? (
+                <ItemList listaProductos={items}/> 
+                    ) : (
+                        <div>Cargando...</div>
+                    )
+                }
+            </div>  
         </>
     );
 };

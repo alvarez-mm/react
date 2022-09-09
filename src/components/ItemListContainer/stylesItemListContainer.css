@@ -1,4 +1,6 @@
-.saludo {
-    font-size: 15px;
-    font-style: italic;
+.itemListContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 }

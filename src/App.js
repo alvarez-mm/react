@@ -15,7 +15,7 @@ function App() {
       <header className="App-header">
       <ImagenInicio/>
       <ItemListContainer greeting={"Bienvenida/o al lugar que estiliza tu casa"}/>
-      <ItemDetailContainer/>
+      <ItemDetailContainer />
       </header>
     </div>
   );
