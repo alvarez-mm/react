@@ -1,13 +1,16 @@
 .imagenProducto {
     width: 85%;
     border-radius: 10%;
+    padding: 10px;
     
 }
 
-h2 {
+.itemProductos h2 {
     font-size: 27px;
+    color: white;
 }
 
-p {
+.itemProductos p {
     font-size: 20px;
+    color: white;
 }
