@@ -18,7 +18,8 @@ const data = [
         descripcion: "Espejo circular de 60 cm de diámetro con madera",
         precio: "$8000",
         imagen: imagenEspejoCircular,
-        stock: 5
+        stock: 5,
+        categoria: "deco"
     },
     {
         id: 2,
@@ -26,7 +27,8 @@ const data = [
         descripcion: "Reloj de madera con maceta",
         precio: "$12000",
         imagen: imagenRelojMacetero,
-        stock: 6
+        stock: 6,
+        categoria: "deco"
     },
     {
         id: 3,
@@ -34,7 +36,8 @@ const data = [
         descripcion: "Porta accesorios de madera",
         precio: "$3000",
         imagen: imagenPortaAccesorios,
-        stock: 10
+        stock: 10,
+        categoria: "deco"
     },
     {
         id: 4,
@@ -42,7 +45,8 @@ const data = [
         descripcion: "Set de platos negros y cubiertos dorados",
         precio: "$20000",
         imagen: imagenVajillaNegra,
-        stock: 5
+        stock: 5,
+        categoria: "bazar"
     },
     {
         id: 5,
@@ -50,7 +54,8 @@ const data = [
         descripcion: "Set de platos rosados y cubiertos dorados",
         precio: "$20000",
         imagen: imagenVajillaRosa,
-        stock: 5
+        stock: 5,
+        categoria: "bazar"
     },
     {
         id: 6,
@@ -58,7 +63,8 @@ const data = [
         descripcion: "set de platos para sushi y palitos de bambu",
         precio: "$20000",
         imagen: imagenVajillaSushi,
-        stock: 5
+        stock: 5,
+        categoria: "bazar"
     },
     {
         id: 7,
@@ -66,7 +72,8 @@ const data = [
         descripcion: "Conjunto de sabanas con flores coloridas",
         precio: "$10000",
         imagen: imagenSabanasColor,
-        stock: 8
+        stock: 8,
+        categoria: "blanco"
     },
     {
         id: 8,
@@ -74,7 +81,8 @@ const data = [
         descripcion: "Conjunto de sabanas con flores azules",
         precio: "$10000",
         imagen: imagenSabanasAzul,
-        stock: 8
+        stock: 8,
+        categoria: "blanco"
     },
     {
         id: 9,
@@ -82,7 +90,8 @@ const data = [
         descripcion: "Conjunto de sabanas con flores grises",
         precio: "$10000",
         imagen: imagenSabanasGris,
-        stock: 8
+        stock: 8,
+        categoria: "blanco"
     },
     {
         id: 10,
@@ -90,7 +99,8 @@ const data = [
         descripcion: "Conjunto de toallas y toallon color blanco con detalles grises",
         precio: "$10000",
         imagen: imagenToallasBlancas,
-        stock: 6
+        stock: 6,
+        categoria: "blanco"
     },
     {
         id: 11,
@@ -98,7 +108,8 @@ const data = [
         descripcion: "Conjunto de toallas y toallon color negro y blanco",
         precio: "$10000",
         imagen: imagenToallasNegras,
-        stock: 6
+        stock: 6,
+        categoria: "blanco"
     },
     {
         id: 12,
@@ -106,7 +117,8 @@ const data = [
         descripcion: "Conjunto de toallas y toallon color lila con detalles blancos",
         precio: "$10000",
         imagen: imagenToallasLila,
-        stock: 6
+        stock: 6,
+        categoria: "blanco"
     },
 ];
 

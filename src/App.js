@@ -18,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element= {<ImagenInicio/>}/>
           <Route path='/productos' element= {<ItemListContainer/>}/>
+          <Route path='/productos/:categoryId' element= {<ItemListContainer/>}/>
           <Route path='/item/:id' element= {<ItemDetailContainer/>}/>
         </Routes>
         <ItemCount stock={5} initial= {1} onAdd />                     

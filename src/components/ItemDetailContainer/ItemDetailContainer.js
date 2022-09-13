@@ -1,25 +1,32 @@
 import { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import data from "../ItemListContainer/mockData";
+import { useParams } from "react-router-dom";
 
-const ItemDetailContainer = ({}) => {
-    const [item , setItem ] = useState([]);
+const ItemDetailContainer = () => {
+    const {id} = useParams();
+    const [item , setItem ] = useState({});
 
-    const getItem = new Promise ((resolve, reject) => {
-        setTimeout (() => {
-            resolve (ItemDetail)
-        }, 2000);
-    });
+    const getItem = (identificador) => {
+        return new Promise ((resolve, reject) => {
+            const prod = data.find(item=>item.id == parseInt (identificador));
+            resolve (prod)  
+       })
+    }
 
         useEffect (() => {
-            getItem.then ((result)=>{
-                setItem (result);
-                console.log (result)
-            })
-        }, []);
+            const getProducto = async() => {
+                const producto = await getItem(id);
+                setItem(producto);
+            }
+
+            getProducto();
+            },[id])
+       
 
     return (
         <>
-            <ItemDetail/> 
+            <ItemDetail item={item}/> 
         </>
     );
 };
