@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import data from "../ItemListContainer/mockData";
 import { useParams } from "react-router-dom";
+import ItemCount from '../ItemCount/ItemCount';
 
 const ItemDetailContainer = () => {
     const {id} = useParams();
@@ -26,7 +27,10 @@ const ItemDetailContainer = () => {
 
     return (
         <>
-            <ItemDetail item={item}/> 
+            <div className="detalleProducto">
+                <ItemDetail item={item}/>
+            </div>
+            <ItemCount stock={5} initial= {1} onAdd />  
         </>
     );
 };
