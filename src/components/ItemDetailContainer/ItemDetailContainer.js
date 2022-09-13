@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
 
     const getItem = (identificador) => {
         return new Promise ((resolve, reject) => {
-            const prod = data.find(item=>item.id == parseInt (identificador));
+            const prod = data.find(item=>item.id === parseInt (identificador));
             resolve (prod)  
        })
     }
