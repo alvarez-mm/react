@@ -33,9 +33,7 @@ const ItemListContainer = () => {
             <div className="itemListContainer">          
                 {
                     items.length > 0 ? (
-                <Link to='/item/:id'>
                 <ItemList listaProductos={items}/> 
-                </Link>
                     ) : (
                         <div>Cargando...</div>
                     )
