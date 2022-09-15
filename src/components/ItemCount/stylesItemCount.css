@@ -6,3 +6,24 @@
     padding: 5px;
 }
 
+.contenedorControles {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedorContador {
+    background-color: grey;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonAgregar {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+

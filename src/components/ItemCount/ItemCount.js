@@ -3,23 +3,29 @@ import "./stylesItemCount.css"
 
 const ItemCount = ({stock, initial , onAdd}) => {
         const [contador, setContador] = useState (initial);
-            const suma = () => {
-                setContador ( contador + 1 )
-            };
-            const resta = () => {
-                setContador (contador - 1 )
-            };
+            
+        const resta = () => {
+            if (contador > 1) {
+                setContador (contador - 1)
+            }
+        }
+
+        const suma = () => {
+            if (contador < stock) {
+                setContador (contador + 1)
+            }
+        }
+         
     return (
-        <>
-            <div className="contador">Contador
-            <h2>{contador}</h2>
-            <button onClick={resta}>-</button>
-            { contador <= stock - 1 ? (
-            <button onClick={suma}>+</button>) : null }
-            { contador > 0 ? (
-            <button onClick={onAdd}>Agregar al carrito</button> ) : null }
+        <div className="contenedorContador">
+            <p>Stock disponible: {stock}</p>
+            <div className="contenedorControles">
+                <button disabled={stock===0} onClick={resta} className="botonControl">-</button>
+                <h2>{contador}</h2>
+                <button disabled={stock===0} onClick={suma} className="botonControl">+</button>
             </div>
-        </>
+            <button className="botonAgregar" disabled={stock===0} onClick={()=>onAdd(contador)}>Agregar al carrito</button>
+        </div>
     );
 };
 

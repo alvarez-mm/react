@@ -10,6 +10,12 @@ import imagenSabanasGris from "../../imagenes/sabanasgris.jpeg";
 import imagenToallasBlancas from "../../imagenes/toallasblancas.jpeg";
 import imagenToallasNegras from "../../imagenes/toallasnegras.jpeg";
 import imagenToallasLila from "../../imagenes/toallaslila.jpeg";
+import imagenVajillaSnacks from "../../imagenes/vajillasnacks.jpeg";
+import imagenCuadroRelax from "../../imagenes/cuadrorelax.jpeg";
+import imagenCestoTejido from "../../imagenes/cestotejido.jpeg";
+import imagenBotellaVidrio from "../../imagenes/botellavidrio.jpeg";
+import imagenMantequera from "../../imagenes/mantequera.jpeg";
+import imagenIndividualMimbre from "../../imagenes/individualmimbre.jpeg";
 
 const data = [
     {
@@ -119,6 +125,60 @@ const data = [
         imagen: imagenToallasLila,
         stock: 6,
         categoria: "blanco"
+    },
+    {
+        id: 13,
+        nombre: "Individual de mimbre",
+        descripcion: "Individual de mimbre con forma de flor",
+        precio: "$1000",
+        imagen: imagenIndividualMimbre,
+        stock: 100,
+        categoria: "deco"
+    },
+    {
+        id: 14,
+        nombre: "Cuadro de madera",
+        descripcion: "Cuadro de madera con frase",
+        precio: "$2000",
+        imagen: imagenCuadroRelax,
+        stock: 20,
+        categoria: "deco"
+    },
+    {
+        id: 15,
+        nombre: "Cesto tejido",
+        descripcion: "Cesto tejido pequeño",
+        precio: "$1500",
+        imagen: imagenCestoTejido,
+        stock: 50,
+        categoria: "deco"
+    },
+    {
+        id: 16,
+        nombre: "Botella de vidrio",
+        descripcion: "Botella de vidrio con tapa dorada",
+        precio: "$3000",
+        imagen: imagenBotellaVidrio,
+        stock: 60,
+        categoria: "bazar"
+    },
+    {
+        id: 17,
+        nombre: "Mantequera",
+        descripcion: "Mantequera de plástico con cuchillo para untar",
+        precio: "$4000",
+        imagen: imagenMantequera,
+        stock: 20,
+        categoria: "bazar"
+    },
+    {
+        id: 18,
+        nombre: "Vajilla para snacks",
+        descripcion: "Set vajilla para snacks de porcelana y bambú",
+        precio: "$9000",
+        imagen: imagenVajillaSnacks,
+        stock: 10,
+        categoria: "bazar"
     },
 ];
 
