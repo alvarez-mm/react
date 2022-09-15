@@ -11,11 +11,15 @@ const ItemDetail = ({item}) => {
 
     return (
     <>
-        <img className="imagenDetalle" src= {item.imagen} alt= {item.nombre}/>
-        <h2>{item.nombre}</h2>
-        <p>{item.descripcion}</p>
-        <p>{item.precio}</p>
-        <ItemCount stock={5} initial= {1} onAdd = {onAdd} />  
+        <div className="contenedorDetalle">
+            <img className="imagenDetalle" src= {item.imagen} alt= {item.nombre}/>
+            <div className="detalle">
+                <h2>{item.nombre}</h2>
+                <p>{item.descripcion}</p>
+                <p>Precio: {item.precio}</p>
+                <ItemCount stock={5} initial= {1} onAdd = {onAdd} />  
+            </div>
+        </div>
     </>
    );
 };
