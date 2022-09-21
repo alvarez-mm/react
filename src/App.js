@@ -7,11 +7,11 @@ import ImagenInicio from './components/ImagenInicio/ImagenInicio';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import CartWidget from './components/CartWidget/CartWidget';
-import { CartContext } from './Context/CartContext';
+import { CartContext, CartProvider } from './Context/CartContext';
 
 function App() {
   return (
-    <CartContext>
+    <CartProvider>
       <BrowserRouter>
         <div className="App">
           <header className="App-header">
@@ -26,7 +26,7 @@ function App() {
           </Routes>              
         </div>
       </BrowserRouter>
-    </CartContext>
+    </CartProvider>
   );
 }
 

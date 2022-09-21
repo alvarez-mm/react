@@ -1,12 +1,15 @@
 import ItemCount from "../ItemCount/ItemCount";
 import "./stylesItemDetail.css"
-import { useState } from "react";
+import { useState , useContext } from "react";
+import { CartContext } from "../../Context/CartContext";
 
 const ItemDetail = ({item}) => {
+    const {addItem} = useContext(CartContext);
     const [contador , setContador] = useState(0);
 
     const onAdd = (count) => {
         setContador(count)
+        addItem(item, count)
     }
 
     return (
