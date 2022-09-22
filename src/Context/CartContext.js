@@ -8,9 +8,7 @@ export const CartProvider = ({children}) => {
 
     const addItem = (item, quantity) => {
         const newProduct ={
-            id: item.id,
-            nombre: item.nombre,
-            descripcion: item.descripcion,
+            ...item,
             cantidad: quantity
         }
 
