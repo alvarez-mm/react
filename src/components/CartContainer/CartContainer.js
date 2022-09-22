@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import "./stylesCartContainer.css";
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 
@@ -11,7 +11,10 @@ const CartContainer = () => {
 
                 {productCartList.map(item =>(
                     <>
-                        <p>{item.nombre} - {item.cantidad} {item.imagen} {item.precio}</p>
+                        <h1>{item.nombre} </h1>
+                        <p>Cantidad: {item.cantidad}</p>
+                        <p>{item.precio}</p>
+                        <img className="imagenCarrito" src= {item.imagen} alt= {item.nombre}/>
                         <button onClick={()=>removeItem(item.id)}>Eliminar Producto</button>
                     </>
                 ))}
