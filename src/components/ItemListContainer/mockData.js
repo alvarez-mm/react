@@ -22,7 +22,7 @@ const data = [
         id: 1,
         nombre: "Espejo Circular",
         descripcion: "Espejo circular de 60 cm de diámetro con madera",
-        precio: "$8000",
+        precio: 8000,
         imagen: imagenEspejoCircular,
         stock: 5,
         categoria: "deco"
@@ -31,7 +31,7 @@ const data = [
         id: 2,
         nombre: "Reloj Macetero",
         descripcion: "Reloj de madera con maceta",
-        precio: "$12000",
+        precio: 12000,
         imagen: imagenRelojMacetero,
         stock: 6,
         categoria: "deco"
@@ -40,7 +40,7 @@ const data = [
         id: 3,
         nombre: "Porta Accesorios",
         descripcion: "Porta accesorios de madera",
-        precio: "$3000",
+        precio: 3000,
         imagen: imagenPortaAccesorios,
         stock: 10,
         categoria: "deco"
@@ -49,7 +49,7 @@ const data = [
         id: 4,
         nombre: "Vajilla Negra",
         descripcion: "Set de platos negros y cubiertos dorados",
-        precio: "$20000",
+        precio: 20000,
         imagen: imagenVajillaNegra,
         stock: 5,
         categoria: "bazar"
@@ -58,7 +58,7 @@ const data = [
         id: 5,
         nombre: "Vajilla Rosa",
         descripcion: "Set de platos rosados y cubiertos dorados",
-        precio: "$20000",
+        precio: 20000,
         imagen: imagenVajillaRosa,
         stock: 5,
         categoria: "bazar"
@@ -67,7 +67,7 @@ const data = [
         id: 6,
         nombre: "Vajilla Sushi",
         descripcion: "set de platos para sushi y palitos de bambu",
-        precio: "$20000",
+        precio: 20000,
         imagen: imagenVajillaSushi,
         stock: 5,
         categoria: "bazar"
@@ -76,7 +76,7 @@ const data = [
         id: 7,
         nombre: "Sabanas Color",
         descripcion: "Conjunto de sabanas con flores coloridas",
-        precio: "$10000",
+        precio: 10000,
         imagen: imagenSabanasColor,
         stock: 8,
         categoria: "blanco"
@@ -85,7 +85,7 @@ const data = [
         id: 8,
         nombre: "Sabanas Azul",
         descripcion: "Conjunto de sabanas con flores azules",
-        precio: "$10000",
+        precio: 10000,
         imagen: imagenSabanasAzul,
         stock: 8,
         categoria: "blanco"
@@ -94,7 +94,7 @@ const data = [
         id: 9,
         nombre: "Sabanas Gris",
         descripcion: "Conjunto de sabanas con flores grises",
-        precio: "$10000",
+        precio: 10000,
         imagen: imagenSabanasGris,
         stock: 8,
         categoria: "blanco"
@@ -103,7 +103,7 @@ const data = [
         id: 10,
         nombre: "Toallas Blancas",
         descripcion: "Conjunto de toallas y toallon color blanco con detalles grises",
-        precio: "$10000",
+        precio: 10000,
         imagen: imagenToallasBlancas,
         stock: 6,
         categoria: "blanco"
@@ -112,7 +112,7 @@ const data = [
         id: 11,
         nombre: "Toallas Negras",
         descripcion: "Conjunto de toallas y toallon color negro y blanco",
-        precio: "$10000",
+        precio: 10000,
         imagen: imagenToallasNegras,
         stock: 6,
         categoria: "blanco"
@@ -121,7 +121,7 @@ const data = [
         id: 12,
         nombre: "Toallas Lila",
         descripcion: "Conjunto de toallas y toallon color lila con detalles blancos",
-        precio: "$10000",
+        precio: 10000,
         imagen: imagenToallasLila,
         stock: 6,
         categoria: "blanco"
@@ -130,7 +130,7 @@ const data = [
         id: 13,
         nombre: "Individual de mimbre",
         descripcion: "Individual de mimbre con forma de flor",
-        precio: "$1000",
+        precio: 1000,
         imagen: imagenIndividualMimbre,
         stock: 100,
         categoria: "deco"
@@ -139,7 +139,7 @@ const data = [
         id: 14,
         nombre: "Cuadro de madera",
         descripcion: "Cuadro de madera con frase",
-        precio: "$2000",
+        precio: 2000,
         imagen: imagenCuadroRelax,
         stock: 20,
         categoria: "deco"
@@ -148,7 +148,7 @@ const data = [
         id: 15,
         nombre: "Cesto tejido",
         descripcion: "Cesto tejido pequeño",
-        precio: "$1500",
+        precio: 1500,
         imagen: imagenCestoTejido,
         stock: 50,
         categoria: "deco"
@@ -157,7 +157,7 @@ const data = [
         id: 16,
         nombre: "Botella de vidrio",
         descripcion: "Botella de vidrio con tapa dorada",
-        precio: "$3000",
+        precio: 3000,
         imagen: imagenBotellaVidrio,
         stock: 60,
         categoria: "bazar"
@@ -166,7 +166,7 @@ const data = [
         id: 17,
         nombre: "Mantequera",
         descripcion: "Mantequera de plástico con cuchillo para untar",
-        precio: "$4000",
+        precio: 4000,
         imagen: imagenMantequera,
         stock: 20,
         categoria: "bazar"
@@ -175,7 +175,7 @@ const data = [
         id: 18,
         nombre: "Vajilla para snacks",
         descripcion: "Set vajilla para snacks de porcelana y bambú",
-        precio: "$9000",
+        precio: 9000,
         imagen: imagenVajillaSnacks,
         stock: 10,
         categoria: "bazar"
