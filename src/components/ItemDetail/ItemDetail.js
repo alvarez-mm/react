@@ -2,6 +2,7 @@ import ItemCount from "../ItemCount/ItemCount";
 import "./stylesItemDetail.css"
 import { useState , useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
+import {Link} from "react-router-dom";
 
 const ItemDetail = ({item}) => {
     const {addItem} = useContext(CartContext);
@@ -23,6 +24,12 @@ const ItemDetail = ({item}) => {
                 <h6> {contador} </h6>
                 <ItemCount stock={5} initial= {1} onAdd = {onAdd} />  
             </div>
+            {
+                contador > 0 &&
+                <Link to="/cart">
+                    <button>Terminar mi compra</button>
+                </Link>
+            }
         </div>
     </>
    );

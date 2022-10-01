@@ -6,7 +6,10 @@ const CartContainer = () => {
     const {productCartList , removeItem , clear , getTotalPrice} = useContext (CartContext);
 
     return (
-
+        <div>
+            {
+            productCartList.length > 0 ?
+        
             <div className="contenedorCarrito">
 
                 {productCartList.map(item =>(
@@ -23,6 +26,9 @@ const CartContainer = () => {
                 <button onClick={clear}>Vaciar el carrito</button>
                 <p>Precio Total: ${getTotalPrice()}</p>
             </div>
+            : <p>El carrito está vacío</p>
+            }
+        </div>
     );
 };
 
