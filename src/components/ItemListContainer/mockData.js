@@ -66,7 +66,7 @@ const data = [
     {
         id: 6,
         nombre: "Vajilla Sushi",
-        descripcion: "set de platos para sushi y palitos de bambu",
+        descripcion: "Set de platos para sushi y palitos de bambu",
         precio: 20000,
         imagen: imagenVajillaSushi,
         stock: 5,

@@ -3,6 +3,8 @@ import data from "./mockData";
 import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 import { Link, useParams } from "react-router-dom";
+import { db } from "../../utils/firebase";
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
 
@@ -10,34 +12,29 @@ const ItemListContainer = () => {
 
     const [items , setItems ] = useState([]);
 
-    const getData = new Promise ((resolve, reject) => {
-        setTimeout (() => {
-            resolve (data)
-        }, 2000);
-    });
+    useEffect (()=> {
 
-        useEffect (() => {
-            getData.then ((result)=>{
-                if (categoryId) {
-                    const nuevoArreglo = result.filter (item=>item.categoria === categoryId);
-                    setItems (nuevoArreglo);
-                    console.log (result)
-                }else {
-                    setItems (result);
-                }       
+        const queryRef = !categoryId ? collection(db , "productos") : query(collection(db, "productos"), where("categoria", "==", categoryId));
+
+            getDocs(queryRef).then(response =>{
+                const resultados = response.docs.map(doc=>{
+                    const newItem = {
+                        id: doc.id,
+                        ...doc.data(),
+                    }
+                    return newItem
+                });
+                setItems(resultados);
             })
-        }, [categoryId]);
+       
+    }, [categoryId])
 
     return (
         <>
             <div className="itemListContainer">          
-                {
-                    items.length > 0 ? (
+
                 <ItemList listaProductos={items}/> 
-                    ) : (
-                        <div>Cargando...</div>
-                    )
-                }
+    
             </div>  
         </>
     );
