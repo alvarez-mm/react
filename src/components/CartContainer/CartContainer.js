@@ -1,12 +1,34 @@
 import "./stylesCartContainer.css";
-import { useContext } from "react";
+import { useContext , useState } from "react";
 import { CartContext } from "../../Context/CartContext";
+import { db } from "../../utils/firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 const CartContainer = () => {
     const {productCartList , removeItem , clear , getTotalPrice} = useContext (CartContext);
+    const [idOrder, setIdOrder] = useState("");
+   
+    const sendOrder = (event) => {
+        event.preventDefault();
+        const orden = {
+            buyer: {
+                nombre: event.target[0].value,
+                celular: event.target[1].value,
+                email: event.target[2].value,
+            },
+            items: productCartList,
+            total: getTotalPrice()
+        }
+    
+        const queryRef = collection(db, "ordenes");
+        addDoc(queryRef, orden).then(response=>{
+            setIdOrder(response.id)
+        });
+    }
 
     return (
         <div>
+            {idOrder && <p>Su pedido fue creado con el número de identificación {idOrder}</p>}
             {
             productCartList.length > 0 ?
         
@@ -25,6 +47,15 @@ const CartContainer = () => {
 
                 <button onClick={clear}>Vaciar el carrito</button>
                 <p>Precio Total: ${getTotalPrice()}</p>
+                <form onSubmit={sendOrder}>
+                    <label>Nombre: </label>
+                    <input type="text"/>
+                    <label>Celular: </label>
+                    <input type="text"/>
+                    <label>Email: </label>
+                    <input type="email"/>
+                    <button type="submit">Enviar pedido</button>
+                </form>
             </div>
             : <p>El carrito está vacío</p>
             }
