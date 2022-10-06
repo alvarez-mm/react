@@ -2,7 +2,7 @@ import "./stylesCartContainer.css";
 import { useContext , useState } from "react";
 import { CartContext } from "../../Context/CartContext";
 import { db } from "../../utils/firebase";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, doc, updateDoc } from "firebase/firestore";
 
 const CartContainer = () => {
     const {productCartList , removeItem , clear , getTotalPrice} = useContext (CartContext);
@@ -15,6 +15,7 @@ const CartContainer = () => {
                 nombre: event.target[0].value,
                 celular: event.target[1].value,
                 email: event.target[2].value,
+                fecha: event.target[3].value,
             },
             items: productCartList,
             total: getTotalPrice()
@@ -23,12 +24,13 @@ const CartContainer = () => {
         const queryRef = collection(db, "ordenes");
         addDoc(queryRef, orden).then(response=>{
             setIdOrder(response.id)
+            clear();
         });
     }
 
     return (
         <div>
-            {idOrder && <p>Su pedido fue creado con el número de identificación {idOrder}</p>}
+            {idOrder && <p>Su pedido fue creado con el identificador {idOrder}</p>}
             {
             productCartList.length > 0 ?
         
@@ -54,6 +56,8 @@ const CartContainer = () => {
                     <input type="text"/>
                     <label>Email: </label>
                     <input type="email"/>
+                    <label>Fecha: </label>
+                    <input type="text"/>
                     <button type="submit">Enviar pedido</button>
                 </form>
             </div>
