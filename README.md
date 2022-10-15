@@ -6,6 +6,8 @@
 
 ## *En construcción y desarrollo*
 
+GIF con navegación [drive] (https://drive.google.com/file/d/1k5HwgUso4wX8Ew0E13_M-7no3vVZdfmH/view?usp=sharing).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
