@@ -27,7 +27,7 @@ const ItemDetail = ({item}) => {
             {
                 contador > 0 &&
                 <Link to="/cart">
-                    <button>Terminar mi compra</button>
+                    <button className="botonTerminar">Terminar mi compra</button>
                 </Link>
             }
         </div>

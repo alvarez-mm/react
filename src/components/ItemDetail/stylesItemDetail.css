@@ -17,3 +17,10 @@
     align-items: baseline;
 }
 
+.botonTerminar {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    border-radius: 20%;
+}

@@ -30,7 +30,7 @@ const CartContainer = () => {
 
     return (
         <div>
-            {idOrder && <p>Su pedido fue creado con el identificador {idOrder}</p>}
+            {idOrder && <p className="muchasGracias">Muchas gracias por su compra! Su pedido fue creado con el identificador {idOrder}</p>}
             {
             productCartList.length > 0 ?
         
@@ -38,18 +38,21 @@ const CartContainer = () => {
 
                 {productCartList.map(item =>(
                     <>
-                        <h1>{item.nombre} </h1>
-                        <p>Cantidad: {item.cantidad}</p>
-                        <p>Precio por unidad: ${item.precio}</p>
-                        <p>Precio productos: ${item.quantityPrice}</p>
-                        <img className="imagenCarrito" src= {item.imagen} alt= {item.nombre}/>
-                        <button onClick={()=>removeItem(item.id)}>Eliminar Producto</button>
+                        <div className="cadaProducto">
+                            <h1>{item.nombre} </h1>
+                            <p>Cantidad: {item.cantidad}</p>
+                            <p>Precio por unidad: ${item.precio}</p>
+                            <p>Precio productos: ${item.quantityPrice}</p>
+                            <img className="imagenCarrito" src= {item.imagen} alt= {item.nombre}/>
+                            <button className="botonEliminar" onClick={()=>removeItem(item.id)}>Eliminar Producto</button>
+                        </div>
                     </>
                 ))}
 
-                <button onClick={clear}>Vaciar el carrito</button>
-                <p>Precio Total: ${getTotalPrice()}</p>
-                <form onSubmit={sendOrder}>
+                <button className="botonVaciar" onClick={clear}>Vaciar el carrito</button>
+                <p className="precioTotal">Precio Total: ${getTotalPrice()}</p>
+                <form className="formularioCompra" onSubmit={sendOrder}>
+                    <p className="completeFormulario">Complete el siguiente formulario:</p>
                     <label>Nombre: </label>
                     <input type="text"/>
                     <label>Celular: </label>
@@ -58,10 +61,10 @@ const CartContainer = () => {
                     <input type="email"/>
                     <label>Fecha: </label>
                     <input type="text"/>
-                    <button type="submit">Enviar pedido</button>
+                    <button className="botonEnviar" type="submit">Enviar pedido</button>
                 </form>
             </div>
-            : <p>El carrito está vacío</p>
+            : <p>El carrito está vacío, elija un producto</p>
             }
         </div>
     );
