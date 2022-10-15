@@ -1,3 +1,11 @@
+# **FIU Diseño y Decoración**
+
+## Plataforma dedicada a la venta minorista de artículos para el hogar, donde se podrán encontrar productos de decoración, línea blanca, y bazar.
+
+# ESTADO DEL PROYECTO
+
+## *En construcción y desarrollo*
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +76,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# TECNOLOGÍAS UTILIZADAS:
+1. Javascript
+2. React
+3. GitHub
+4. Firebase
+
+
+# PERSONA DESARROLLADORA DEL PROYECTO:
+
+## *Maria Marianela Alvarez*
